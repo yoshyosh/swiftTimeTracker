@@ -13,6 +13,7 @@
 		332BBC8519849E9B0093FF0E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 332BBC8419849E9B0093FF0E /* Images.xcassets */; };
 		332BBC9119849E9C0093FF0E /* swiftTimeTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332BBC9019849E9C0093FF0E /* swiftTimeTrackerTests.swift */; };
 		332BBC9B19849ED00093FF0E /* Readme.md in Sources */ = {isa = PBXBuildFile; fileRef = 332BBC9A19849ED00093FF0E /* Readme.md */; };
+		332BBC9D1984A3870093FF0E /* SavedTimesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332BBC9C1984A3870093FF0E /* SavedTimesTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		332BBC8F19849E9C0093FF0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		332BBC9019849E9C0093FF0E /* swiftTimeTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftTimeTrackerTests.swift; sourceTree = "<group>"; };
 		332BBC9A19849ED00093FF0E /* Readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
+		332BBC9C1984A3870093FF0E /* SavedTimesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavedTimesTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 			children = (
 				332BBC7D19849E9B0093FF0E /* AppDelegate.swift */,
 				332BBC7F19849E9B0093FF0E /* ViewController.swift */,
+				332BBC9C1984A3870093FF0E /* SavedTimesTableViewController.swift */,
 				332BBC8119849E9B0093FF0E /* Main.storyboard */,
 				332BBC8419849E9B0093FF0E /* Images.xcassets */,
 				332BBC7B19849E9B0093FF0E /* Supporting Files */,
@@ -213,6 +216,7 @@
 			files = (
 				332BBC8019849E9B0093FF0E /* ViewController.swift in Sources */,
 				332BBC7E19849E9B0093FF0E /* AppDelegate.swift in Sources */,
+				332BBC9D1984A3870093FF0E /* SavedTimesTableViewController.swift in Sources */,
 				332BBC9B19849ED00093FF0E /* Readme.md in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
