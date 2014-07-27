@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6185.11" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="q8X-xx-60z">
     <dependencies>
-        <deployment defaultVersion="1792" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6190.4"/>
     </dependencies>
     <scenes>
@@ -18,7 +17,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="8Cz-dT-IsO">
-                                <rect key="frame" x="122" y="449" width="76" height="30"/>
+                                <rect key="frame" x="35" y="450" width="250" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Start Timer">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -36,14 +35,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ZvR-Hr-c51">
-                                <rect key="frame" x="143" y="493" width="34" height="30"/>
+                                <rect key="frame" x="35" y="450" width="250" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Save">
+                                <state key="normal" title="Stop">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="WQY-5y-LKK" kind="push" id="Nze-vl-sea"/>
+                                    <action selector="stopTimerButtonDidPress:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="iSq-SE-P4E"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -52,6 +51,9 @@
                     <navigationItem key="navigationItem" id="MgU-PH-tLi"/>
                     <connections>
                         <outlet property="currentTimerLabel" destination="B0B-sX-K9z" id="kD8-JG-IXu"/>
+                        <outlet property="startTimerButton" destination="8Cz-dT-IsO" id="FFn-sZ-fMM"/>
+                        <outlet property="stopTimerButton" destination="ZvR-Hr-c51" id="3oY-EX-8n2"/>
+                        <segue destination="WQY-5y-LKK" kind="push" identifier="showSavedTimesSegue" id="Ysr-Ba-oEY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
@@ -67,16 +69,25 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="lIS-RV-ivo">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="timeCell" textLabel="EUF-e7-FcW" style="IBUITableViewCellStyleDefault" id="lIS-RV-ivo">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lIS-RV-ivo" id="RAz-48-iNf">
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="EUF-e7-FcW">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
+                        <sections/>
                         <connections>
-                            <outlet property="dataSource" destination="WQY-5y-LKK" id="ast-vh-Glk"/>
-                            <outlet property="delegate" destination="WQY-5y-LKK" id="Ic0-PS-R7p"/>
+                            <outlet property="dataSource" destination="WQY-5y-LKK" id="584-ZR-boK"/>
+                            <outlet property="delegate" destination="WQY-5y-LKK" id="z4Y-5i-0eA"/>
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="mpb-5f-wfi"/>

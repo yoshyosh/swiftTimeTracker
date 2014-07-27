@@ -8,8 +8,10 @@
 
 import UIKit
 
-class SavedTimesTableViewController: UITableViewController, UITableViewDataSource, UITableViewDelegate {
-
+class SavedTimesTableViewController: UITableViewController {
+    //Theres a swift way of doing arrays
+    var savedTimes = [String]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -18,6 +20,8 @@ class SavedTimesTableViewController: UITableViewController, UITableViewDataSourc
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        
+        // Explain how to change table view background color
         self.tableView.backgroundView = UIImageView(image: UIImage(named: "blurPurple"))
     }
 
@@ -31,20 +35,23 @@ class SavedTimesTableViewController: UITableViewController, UITableViewDataSourc
     override func numberOfSectionsInTableView(tableView: UITableView!) -> Int {
         // #warning Potentially incomplete method implementation.
         // Return the number of sections.
-        return 0
+        return 1
     }
 
     override func tableView(tableView: UITableView!, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete method implementation.
         // Return the number of rows in the section.
-        return 5
+        return self.savedTimes.count
     }
 
     override func tableView(tableView: UITableView!, cellForRowAtIndexPath indexPath: NSIndexPath!) -> UITableViewCell! {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath) as UITableViewCell
-
+        let cell = tableView.dequeueReusableCellWithIdentifier("timeCell", forIndexPath: indexPath) as UITableViewCell
+        
+     //When using and testing saved times array, just start with an initialized one with prepopulated values, otherwise you might forget to add them from the dynamic count
         // Configure the cell...
-        cell.textLabel.text = "First data view"
+        cell.textLabel.text = self.savedTimes[indexPath.row]
+        cell.textLabel.textColor = UIColor.whiteColor()
+        cell.backgroundColor = UIColor.clearColor()
         return cell
     }
 
