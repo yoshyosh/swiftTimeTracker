@@ -46,7 +46,7 @@ class SavedTimesTableViewController: UITableViewController {
 
     override func tableView(tableView: UITableView!, cellForRowAtIndexPath indexPath: NSIndexPath!) -> UITableViewCell! {
         let cell = tableView.dequeueReusableCellWithIdentifier("timeCell", forIndexPath: indexPath) as UITableViewCell
-        
+
      //When using and testing saved times array, just start with an initialized one with prepopulated values, otherwise you might forget to add them from the dynamic count
         // Configure the cell...
         cell.textLabel.text = self.savedTimes[indexPath.row]
