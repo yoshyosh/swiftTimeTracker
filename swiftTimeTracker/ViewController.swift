@@ -22,11 +22,8 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         
         //Show them how to add corner radius to views/buttons
-        self.startTimerButton.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.5)
         self.startTimerButton.layer.cornerRadius = 5.0
-        self.stopTimerButton.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.5)
         self.stopTimerButton.layer.cornerRadius = 5.0
-        self.stopTimerButton.hidden = true
     }
 
     override func didReceiveMemoryWarning() {
@@ -35,39 +32,33 @@ class ViewController: UIViewController {
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
+        self.appTimer.invalidate()
+        viewSavedTimes.append(self.currentTimerLabel.text)
+        self.startTimerButton.hidden = false
+        self.stopTimerButton.hidden = true
+
         // Need to explain the logic here, why we need to use as, etc
         let destinationVC: SavedTimesTableViewController = segue.destinationViewController as SavedTimesTableViewController
         destinationVC.savedTimes = self.viewSavedTimes
     }
     
-    @IBAction func startTimerButtonDidPress(sender: AnyObject) {
+    @IBAction func startTimerButtonDidPress() {
         // Need general explainations on the different methods
-        self.appTimer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: "incrementCurrentTimeLabel", userInfo: nil, repeats: true)
-        
-        //Should create a toggle function
+
+        self.appTimer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: "updateCurrentTimeLabel", userInfo: NSDate(), repeats: true)
         self.startTimerButton.hidden = true
         self.stopTimerButton.hidden = false
+        self.currentTimerLabel.text = "0"
     }
-    
-    @IBAction func stopTimerButtonDidPress(sender: AnyObject) {
-        self.startTimerButton.hidden = false
-        self.stopTimerButton.hidden = true
-        
-        //Stop the timer from running
-        self.appTimer.invalidate()
-        
-        //Append the time it was stopped at
-        viewSavedTimes.append(self.currentTimerLabel.text)
-        //Go over how to setup performSegue with identifier, also introduce idea around logic, if this segueID do this
-        self.performSegueWithIdentifier("showSavedTimesSegue", sender: self)
-    }
-    
-    func incrementCurrentTimeLabel(){
-        // As NSString, we are converting String to NSString which has the property intValue
-        var currentTime = (self.currentTimerLabel.text as NSString).intValue
-        var updatedTime = ++currentTime
-        var updatedTimeText = NSString(format: "%d", updatedTime)
-        self.currentTimerLabel.text = updatedTimeText
+
+    func updateCurrentTimeLabel() {
+        // NSDate math
+        var elapsed = -(self.appTimer.userInfo as NSDate).timeIntervalSinceNow
+        if elapsed < 60 {
+            self.currentTimerLabel.text = String(format: "%.0f", elapsed)
+        } else {
+            self.currentTimerLabel.text = String(format: "%.0f:%02.0f", elapsed / 60, elapsed % 60)
+        }
     }
 
 }
