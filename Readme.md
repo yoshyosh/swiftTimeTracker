@@ -30,6 +30,9 @@ Now your project has been made!
 
 ![img](https://dl.dropboxusercontent.com/u/10116/timerScreenshots/Screenshot%202014-08-01%2022.15.56.png)
 
+5. Make sure you see this in the right panel, if you don't, counting from the top far right click the 3rd icon "Hide or show the navigator", then "Show the file inspector" is the paper icon on the row of icons below that
+![img](https://dl.dropboxusercontent.com/u/10116/timerScreenshots/Screenshot%202014-08-01%2023.25.27.png)
+
 6. On the far right panel you should see "Interface Builder Document", underneath that you should see "Use Auto Layout", uncheck that
 
 ![img](https://dl.dropboxusercontent.com/u/10116/timerScreenshots/Screenshot%202014-08-01%2022.19.02.png)
