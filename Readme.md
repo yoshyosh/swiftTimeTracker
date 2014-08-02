@@ -35,7 +35,23 @@ Now your project has been made!
 9. On the left panel click "Image.xcassets" its below Main.Storyboard
 10. You should see this:
 [img]
-11. Now go to https://www.dropbox.com/sh/e6azhungokq9nqq/AAA675E3DP_QDbi0kTmgSWROa to get the image assets
-12. Drag "blurBlue.png, blurBlue@2x.png, blurPurple.png, blurPurple@2x.png" into the section where AppIcon and LaunchImage are, it should now look like this:
+11. Now go to https://www.dropbox.com/sh/e6azhungokq9nqq/AAA675E3DP_QDbi0kTmgSWROa and download as zip to get the image assets
+12. Drag "blurBlue.png, blurBlue@2x.png, blurPurple.png, blurPurple@2x.png" into the section where AppIcon and LaunchImage are, it should now look like this once you drop them in:
 [img]
 13. Click Main.Storyboard
+14. In the right panel at the bottom, make sure the "Show the Object Library" section is active, type in UIImageView
+[img]
+15. Drag Image View into the view controller
+[img]
+16. Click the image view
+17. In the right panel at the very top, click "Show the attributes inspector" its the 4th icon down, looks like a nail
+[img]
+18. Under image view, in the image text field, type in "blurBlue" it should autocomplete, and press enter
+[img]
+19. In the right panel at the bottom clear out your search for "UIimageview" and find "label", drag that on top of your blue background
+[img]
+20. To change the color of the label, in the right panel change the color field to white color
+21. Double click the label to change what it says, I put "37:18" for generic time placeholder
+22. In the right panel, under color you should see font, click the T and then click Font System-system and change that to custom
+23. Now right underneath click family and change that to Avenir Next, and for size type in 50
+24. 
