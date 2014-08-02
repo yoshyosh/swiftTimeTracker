@@ -36,7 +36,7 @@ Now your project has been made!
 
 6. On the far right panel you should see "Interface Builder Document", underneath that you should see "Use Auto Layout", uncheck that
 
-![img](https://dl.dropboxusercontent.com/u/10116/timerScreenshots/Screenshot%202014-08-01%2022.19.02.png)
+![img](https://dl.dropboxusercontent.com/u/10116/timerScreenshots/Screenshot%202014-08-01%2023.25.27.png)
 
 7. It will ask you to disable size classes as well, click that
 
