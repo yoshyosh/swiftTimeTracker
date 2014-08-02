@@ -102,11 +102,11 @@ Great you have the basics set up for the first timer screen!
 
 1. In the top left you should see something like this:
 
-![img](https://dl.dropboxusercontent.com/u/10116/timerScreenshots/Screenshot 2014-08-01 22.49.07)
+![img](https://dl.dropboxusercontent.com/u/10116/timerScreenshots/Screenshot%202014-08-01%2023.32.47.png)
 
 2. Click "iPad2" or whatever is there, and change it to iPhone5s
 
-![img](hhttps://dl.dropboxusercontent.com/u/10116/timerScreenshots/Screenshot%202014-08-01%2022.48.57.png)
+![img](https://dl.dropboxusercontent.com/u/10116/timerScreenshots/Screenshot%202014-08-01%2022.48.57.png)
 
 3. Now press the play button on the top far left, to see what the project looks like
 
