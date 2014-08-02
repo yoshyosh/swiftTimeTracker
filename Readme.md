@@ -4,7 +4,38 @@ After pressing start the timer counts until you press stop. Then it adds it to a
 
 In the future we may use realm.io or parse to store the data
 
-## Work in progress
+## Walkthrough Guide
+
+What you will be making
 
 ![Start Screen](https://dl.dropboxusercontent.com/u/10116/timerAssets/StartTimer320.png)
 ![Saved Times Screen](https://dl.dropboxusercontent.com/u/10116/timerAssets/SavedTimes320.png)
+
+### Getting started
+
+1. Open up XCode -> Click "Create a new Xcode project"
+2. Select Single View Application and hit next
+[img]
+3. Type in a product name, I chose swiftTimerTest, hit next
+[img]
+4. Choose a place to create it and click create
+
+Now your project has been made!
+
+5. Click Main.Storyboard on the left you should see this:
+
+[img]
+
+6. On the far right panel you should see "Interface Builder Document", underneath that you should see "Use Auto Layout", uncheck that
+[img]
+7. It will ask you to disable size classes as well, click that
+[img]
+8. Now your storyboard view controller should look like this:
+[img]
+9. On the left panel click "Image.xcassets" its below Main.Storyboard
+10. You should see this:
+[img]
+11. Now go to https://www.dropbox.com/sh/e6azhungokq9nqq/AAA675E3DP_QDbi0kTmgSWROa to get the image assets
+12. Drag "blurBlue.png, blurBlue@2x.png, blurPurple.png, blurPurple@2x.png" into the section where AppIcon and LaunchImage are, it should now look like this:
+[img]
+13. Click Main.Storyboard
