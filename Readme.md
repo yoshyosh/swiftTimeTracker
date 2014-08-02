@@ -15,7 +15,7 @@ What you will be making
 
 1. Open up XCode -> Click "Create a new Xcode project"
 2. Select Single View Application and hit next
-![img](https://www.dropbox.com/s/ct9p3p7qige7q67/Screenshot%202014-08-01%2022.14.35.png)
+![img](https://dl.dropboxusercontent.com/u/10116/timerScreenshots/Screenshot%202014-08-01%2022.14.35.png)
 3. Type in a product name, I chose swiftTimerTest, hit next
 ![img](https://www.dropbox.com/s/se6z6vgx11s123s/Screenshot%202014-08-01%2022.15.15.png)
 4. Choose a place to create it and click create
