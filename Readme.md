@@ -11,6 +11,10 @@ What you will be making
 ![Start Screen](https://dl.dropboxusercontent.com/u/10116/timerAssets/StartTimer320.png)
 ![Saved Times Screen](https://dl.dropboxusercontent.com/u/10116/timerAssets/SavedTimes320.png)
 
+## What you need
+1. XCode Beta4 developer.apple.com
+2. https://www.dropbox.com/sh/e6azhungokq9nqq/AAA675E3DP_QDbi0kTmgSWROa image assets
+
 ### Getting started
 
 1. Open up XCode -> Click "Create a new Xcode project"
