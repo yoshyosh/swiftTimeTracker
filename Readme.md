@@ -54,4 +54,22 @@ Now your project has been made!
 21. Double click the label to change what it says, I put "37:18" for generic time placeholder
 22. In the right panel, under color you should see font, click the T and then click Font System-system and change that to custom
 23. Now right underneath click family and change that to Avenir Next, and for size type in 50
-24. 
+24. You probably noticed that the label box doesnt fit the text, so click it and drag the edges so that it is big enough to fit what you changed the label text to be.
+25. In the right panel at the bottom in the Object Library, type in button, drag the first one you see onto the blue background
+26. You can change the color of the button by click Text Color in the right panel
+27. You can also change the text by double clicking, I made mine say "Start"
+28. Click font, change it to custom or system, then back to custom, this will let you set font, size, etc
+29. Scroll all the way down in the right panel and you should see view, here you can change the background color of the button
+[img]
+
+Great you have the basics set up for the first timer screen!
+[img]
+
+1. In the top left you should see something like this:
+[img]
+2. Click "iPad2" or whatever is there, and change it to iPhone5s
+3. Now press the play button on the top far left, to see what the project looks like
+
+You should see this
+[img]
+
