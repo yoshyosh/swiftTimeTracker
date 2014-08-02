@@ -118,3 +118,15 @@ You should see this in the simulator!
 
 ![img](https://dl.dropboxusercontent.com/u/10116/timerScreenshots/Screenshot%202014-08-01%2023.10.50.png)
 
+### Connecting view controllers
+
+1. Create another button called stop, that is the exact size as the start button. A good way to do this is to just click the start button and press cmd + d, this will duplicate the button. Don't forget to change its text to "Stop"
+[img]
+2. Now in right panel at the bottom in "Object Library" find TableViewController and drag that into the canvas
+It should look like this
+[img]
+3. Now click the stop button, hold ctrl, and left click drag to the TableViewController, then let go, you should see something like this
+[img]
+
+
+
