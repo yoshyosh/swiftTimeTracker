@@ -137,6 +137,6 @@ It should look like this
 
 5. Click the play button at the far top left (cmd + r), to run the simulator
 
-#### Work in progroess
+#### Work in progress
 
 
