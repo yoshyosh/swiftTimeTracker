@@ -10,7 +10,7 @@
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="swiftTimeTracker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blurBlue" id="sLe-tB-MXy">
@@ -64,12 +64,12 @@
             </objects>
             <point key="canvasLocation" x="694" y="362"/>
         </scene>
-        <!--Saved Times Table View Controller-->
+        <!--Saved Items-->
         <scene sceneID="3Y0-Y7-cs8">
             <objects>
                 <tableViewController id="WQY-5y-LKK" customClass="SavedTimesTableViewController" customModule="swiftTimeTracker" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="UMc-uo-8RE">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -94,7 +94,7 @@
                             <outlet property="delegate" destination="WQY-5y-LKK" id="z4Y-5i-0eA"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="mpb-5f-wfi"/>
+                    <navigationItem key="navigationItem" title="Saved Items" id="mpb-5f-wfi"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AIV-06-k5N" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -105,9 +105,15 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="q8X-xx-60z" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <nil key="simulatedStatusBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="5Ek-LZ-RNU">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <offsetWrapper key="textShadowOffset" horizontal="0.0" vertical="0.0"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>

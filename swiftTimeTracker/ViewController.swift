@@ -24,11 +24,7 @@ class ViewController: UIViewController {
         //Show them how to add corner radius to views/buttons
         self.startTimerButton.layer.cornerRadius = 5.0
         self.stopTimerButton.layer.cornerRadius = 5.0
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        self.navigationController.navigationBar.setBackgroundImage(UIImage(named: "transparentNav"), forBarMetrics: UIBarMetrics.Default)
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {

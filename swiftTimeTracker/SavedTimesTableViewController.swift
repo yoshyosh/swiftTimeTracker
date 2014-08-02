@@ -25,11 +25,6 @@ class SavedTimesTableViewController: UITableViewController {
         self.tableView.backgroundView = UIImageView(image: UIImage(named: "blurPurple"))
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
     // MARK: - Table view data source
 
     override func numberOfSectionsInTableView(tableView: UITableView!) -> Int {
